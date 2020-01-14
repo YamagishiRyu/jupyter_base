@@ -1,7 +1,9 @@
 version: '3'
 services:
   anacnda:
-    build: .
+    build: 
+      context: .
+      dockerfile: ./docker/anaconda/Dockerfile
     volumes:
       - ./workspace:/workspace
     ports:
