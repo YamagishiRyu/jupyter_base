@@ -25,3 +25,6 @@ stop:
 
 add/package:
 	$(DOCKER_COMPOSE_CMD) run $(ANACONDA_SERVICE_NAME) conda env export -n root > workspace/env.yaml
+
+bash:
+	$(DOCKER_COMPOSE_CMD) run $(ANACONDA_SERVICE_NAME) bash
