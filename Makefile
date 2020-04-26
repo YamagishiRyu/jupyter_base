@@ -18,7 +18,7 @@ build:
 	@$(DOCKER_COMPOSE_CMD) build
 
 run:
-	@$(DOCKER_COMPOSE_CMD) up 
+	@$(DOCKER_COMPOSE_CMD) up -d
 
 stop:
 	@$(DOCKER_COMPOSE_CMD) stop
