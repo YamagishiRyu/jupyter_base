@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3
+FROM continuumio/miniconda
 WORKDIR /workspace
 COPY workspace/env.yaml /workspace
 RUN conda env update --file /workspace/env.yaml
